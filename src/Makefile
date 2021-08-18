@@ -1,3 +1,5 @@
-all: clean original redblack
+BINS=original redblack
+all: clean $(BINS)
+	echo +10 | ./redblack
 clean:
-	rm -fr ? *~ .*~ *.out
+	rm -fr ? *~ .*~ *.out $(BINS) *.o
